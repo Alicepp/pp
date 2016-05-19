@@ -1,0 +1,1 @@
+{%extends file="gmobile/widget/page/user/info/info8.tpl"%}

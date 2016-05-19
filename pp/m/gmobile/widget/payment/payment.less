@@ -1,0 +1,16 @@
+.borderRadius(@radius){-moz-border-radius: @radius;-webkit-border-radius: @radius;border-radius: @radius;}
+.inlineBlock{display: inline-block;*display: inline;*zoom: 1;}
+.pop-paytt{position: relative;display: block;height: 50px;background: #e5e5e5;z-index: 2;}
+.paying-wrap{padding: 36px 70px;
+    .paying{overflow: hidden;
+        dt{float: left;width: 61px;height: 61px;background: url(img/paying.png?__sprite) 0 0 no-repeat;}
+        dd{margin-left: 80px;overflow: hidden;}
+        .tt{margin: 15px 0 20px;font-size: 22px;color: #444;}
+        p{line-height: 22px;font-size: 14px;font-family: '宋体';}
+    }
+    .paying-btn{margin-top: 35px;overflow: hidden;
+        a{.inlineBlock;padding: 0 25px;height: 36px;text-align: center;line-height: 36px;font-size: 16px;color: #fff;.borderRadius(3px);}
+        .finish{background: #dd1136;}
+        .trouble{margin-left: 15px;background: #b6b6b6;}
+    }
+}

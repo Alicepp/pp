@@ -1,0 +1,377 @@
+.page-main{
+  position: relative;
+    .wrap-ding{
+	    img{
+	      width: 100%;
+	      height: auto;
+	    }
+	    .cur{display:none;}
+	}
+    .ding-info{
+    	position: relative;
+    	background:url(img/wap_05.png) no-repeat;
+    	background-size:100% 100%;
+        width: 100%;
+        padding-bottom: 128%;
+    	overflow:hidden;
+    	.ding-info-box{
+    		padding:10% 10%;
+            position: absolute;
+            width: 100%;
+		    height:100%;
+		    dl{
+			    overflow: hidden;
+			    line-height: 24px;
+			    dt{
+			        color:#fff;
+			        font-size:1.2rem;
+			      }
+              .jieshao{
+                height: 48px;
+              }
+			      dd{
+			        font-size:1.2rem;
+			        color:#00d2ff;
+			        line-height: 24px;
+                    padding-left: 5px;
+
+			        .col-style{
+			          margin-left: 15px;
+			          display: inline-block;
+			          cursor: pointer;
+			          color:#fff;
+			          i{width:20px; height: 20px; display: inline-block;vertical-align: middle;margin-right:7px}
+			        }
+			        .active{
+			          color:#00d2ff;
+			        }
+
+			    }
+		    }
+		    .parts-list{
+		    	padding-top:4%;
+		    	width:100%;
+		    	li{
+                    width:0;
+		    		margin-right:1rem;
+			        position: relative;
+                  -webkit-box-flex: 1;
+                  -moz-box-flex: 1;
+                  -ms-box-flex: 1;
+                  box-flex: 1;
+			        cursor: pointer;
+                    img{width: 100%;position: absolute;}
+			        .img-box{
+                        width: 100%;
+                        padding-bottom: 100%;
+			        	border:#e6eef1 solid 2px;
+                        position:relative;
+			        }
+			        .img-mask{
+			        	width: 100%;
+			        	height: 100%;
+			        	position: absolute;
+			        	top:0;
+			        	left: 0;
+			        	background: #fff;
+			        	opacity: 0.8;
+			        	filter:alpha(opacity=80);
+			        	display: none;
+			        }
+			        .cur{display: block;}
+			        .img-mask-font{
+				        text-align: center;
+				        color:#000;
+				        z-index: 5;
+				        position:relative;
+				        top:37%;
+				        
+			        }
+			        .img-font{
+			        	height: 20px;
+			        	line-height: 20px;
+			        	overflow:hidden;
+			        	width:100%;
+			        	color:#fff;
+			        	font-size:1.2rem;
+			        	text-align: center;
+			        }
+		    	}
+		    	li:last-child{margin-right:0;}
+		    }
+            .pint-info{font-size:1.2rem;color:#f00;text-align:center;line-height:20px;display:none; position: relative; z-index: 5;}
+	        .kaizao-btn{
+		    	width: 60px;
+		    	height: 60px;
+		    	background-image: url("img/btn.png");
+		    	position:absolute ;
+		    	left:50%;
+		    	margin-left:-18px;
+		    	bottom:4%;
+		    	background-size:cover;
+		    }
+    	}
+    }
+}
+
+.wrap-mask{
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 36;
+    background:#000;
+	display:none;
+}
+.wrap-tip1{
+  background: url("img/tip1.png") no-repeat;
+  margin:0 15px;
+  background-size:100% 100%;
+  padding:10px 0;
+  position: fixed;
+  width:92%;
+  top:50%;
+  left:50%;
+  margin-top:-160px;
+  margin-left:-46%;
+  z-index:1138;
+  display:none;
+  .tip1-lit{
+    margin-top: 10px;
+    line-height: 40px;
+    text-align: center;
+    color:#31caff;
+    font-size:1.6rem;
+    font-weight: bold;
+  }
+  .design-info{
+    margin: 0 auto;
+    .design-dl:first-child{
+    	dt,dd{
+    		margin-top:10px;
+    		line-height:28px;
+    	}
+    }
+    .design-dl{
+      height: 52px;
+      overflow: hidden;
+      padding-right:10px;
+      dt {
+        width: 95px;
+        float: left;
+        font-size:1.2rem;
+        color:#fff;
+        text-align: right;
+        padding-right: 2px;
+        overflow:hidden;
+        margin-top:8px
+      }
+      dd{
+        .citys{
+        	float:left;
+        	position:relative;
+        	em{
+        		position:absolute;
+        		left:5px;
+        		top:7px;
+        		color:#31caff;
+        	}
+        }
+        .span-time,.time-active{
+         background-image: url("img/sc.png");
+          width:57px;
+          height:28px;
+          line-height:28px;
+          background-size:100% 100%;
+          margin-right:1px ;
+          text-align: center;
+          color:#fff;
+          font-size: 1.2rem;
+          display: inline-block;
+          cursor: pointer;
+        }
+        .time-active{
+          background-image: url("img/tj.png");
+          color:#00ffff;
+        }
+        .input-big{
+          border:none;
+          width: 172px;
+          padding-left: 5px;
+          height: 30px;
+          margin-top:4px;
+          color:#31caff;
+          font-size:1.2rem;
+          background-color: #00334c;
+          -moz-box-shadow:1px 1px 17px #001f2e inset;               
+	      -webkit-box-shadow:1px 1px 17px #001f2e inset;            
+	      box-shadow:1px 1px 17px #001f2e inset;
+          border-radius:5px;
+        }
+        .input-small{
+          border:none;
+          width: 60px;
+          padding-left: 22px;
+          height: 30px;
+          color:#31caff;
+          font-size:1.2rem;
+          background-color: #00334c;
+          float: left;
+          background-color: #00334c;
+          -moz-box-shadow:1px 1px 17px #001f2e inset;               
+	      -webkit-box-shadow:1px 1px 17px #001f2e inset;            
+	      box-shadow:1px 1px 17px #001f2e inset;
+          border-radius:5px;
+        }
+        .input-mar{
+          margin-right: 11px;
+        }
+        .yz-img{
+          height: 30px;
+          border-radius: 5px;
+          width: 83px;
+          margin-left: 10px;
+        }
+        .pint-info{color:#f00;line-height:20px;display:none;font-size:1.2rem;text-align: center;}
+      }
+    }
+    .tijiao{
+      height: 30px;
+      line-height: 30px;
+      color:#fdd048;
+      font-size: 1.6rem;
+      text-align: center;
+      background: url("img/bt.png") repeat-x;
+      cursor: pointer;
+      margin:10px 15px;
+      border-radius:5px;
+    }
+  }
+
+}
+.wrap-tip2{
+   padding:0 15px;
+  position: absolute;
+  left:50%;
+  width:92%;
+  margin-left:-50%;
+  top:120px;
+  z-index: 1138;
+  display: none;
+  .tip2-bg1{
+    background: url("img/tip2.png") no-repeat;
+    background-size:100% 100%;
+    padding-bottom:10px;
+  }
+  .tip2-con{
+    margin: 0 auto;
+    overflow:hidden;
+    .tip2-lit{
+      margin-top: 20px;
+      line-height: 104px;
+      text-align: center;
+      color:#31caff;
+      font-size:24px;
+      font-weight: bold;
+    }
+    .big1-p {
+      line-height: 25px;
+      color: #fff;
+      font-size: 1.1rem;
+      padding:0 15px;
+      a{
+        color:#fdd048;
+      }
+      em{
+        color:#31caff;
+      }
+      .col-style{
+        margin-right: 15px;
+        display: inline-block;
+        i{width:20px; height: 20px; display: inline-block; margin: 0 7px -5px 0}
+      }
+
+    }
+    .big1-f16{
+      font-size:1.2rem;
+      margin-top:90px;
+    }
+  }
+  .padlt{
+    padding:15px 0;
+  }
+  .tip2-bg2{
+    background: url("img/tip3.png") no-repeat;
+    background-size:100% 100%;
+    padding-bottom:10px;
+    .tip2-parts{
+      color: #fff;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      float: left;
+      padding-left:15px;
+      line-height:55px;
+    }
+    .parts-list {
+      float:left;
+      li {
+        margin: 10px 10px 0 0;
+        float: left;
+        position: relative;
+        .img-box {
+          width:55px;
+          height:55px;
+          border: #e6eef1 solid 2px;
+          img{
+          	width:55px;
+          	height:55px;
+          }
+          .img-mask{display: none;}
+        }
+      }
+    }
+  }
+  .tip2-bg2 h3,.tip2-bg3 h3{
+    font-size:1.4rem;
+    font-weight: bold;
+    color:#fff;
+    padding:0 15px;
+  }
+
+  .color1{
+    background: #fff;
+  }
+
+  .tip2-bg3{
+    background: url("img/tip4.png") no-repeat;
+    background-size:100% 100%;
+    .gomall{
+      height: 30px;
+      line-height: 30px;
+      color:#fdd048;
+      font-size: 1.6rem;
+      text-align: center;
+      background: url("img/bt.png") repeat-x;
+      cursor: pointer;
+      margin:20px 15px;
+      border-radius:5px;
+      a{color:#fdd048;}
+    }
+  }
+
+}
+.dl-rule{
+  color: #fff;
+  font-size: 12px;
+  line-height: 28px;
+  padding: 25px 20px;
+  background: url(img/bgw.png) repeat-y 0 0;
+  background-size: 100% auto;
+  dt{
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

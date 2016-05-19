@@ -1,0 +1,118 @@
+.top-banner{
+  width: 100%;
+  height: 345px;
+  overflow: hidden;
+  position: relative;
+}
+.banner-slide{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left:0;
+  top:0;
+  z-index: 1;
+
+  .slide-ul,.slide-li{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left:0;
+    top:0;
+  }
+  .slide-li {
+    a{
+      position: absolute;
+      height: 100%;
+      width: 900px;
+      left:50%;
+      margin-left: -300px;
+      text-align: center;
+      img{
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+    .slide-li:first-child{
+      opacity: 1;
+
+      z-index: 2;
+    }
+
+}
+    .slide-dot {
+      position: absolute;
+      right: 50%;
+      margin-right: -500px;
+      bottom: 20px;
+      z-index: 10;
+      .slide-select{
+        background: #fff;
+      }
+      li{
+          display: inline-block;
+          background: #332e27;
+          width: 12px;
+          height: 12px;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%;
+          margin: 0 5px;
+          float: left;
+          border: #a39e98 solid 2px;
+          cursor: pointer;
+          filter: alpha(opacity=80);
+          opacity: .8;
+      }
+    }
+    .tuan-overview{
+      position: absolute;
+      top:35px;
+      left:50%;
+      margin-left: -580px;
+      z-index: 3;
+      width: 290px;
+      text-align: center;
+      height: 273px;
+      border-radius: 5px 5px 0 0;
+      background: #fff;
+      overflow: hidden;
+      font-size: 16px;
+      color: #333;
+    }
+    .overview-tit{
+      height: 120px;
+      background: url(/static/img/icon-1.png) no-repeat 64px 50% #333333;
+      color: #fff;
+      .tuan-num{
+        font-size: 36px;
+        color: #eb3e38;
+        padding-top: 22px;
+      }
+    }
+    .overview-part{
+      height: 88px;
+      line-height: 86px;
+      margin: 0 5px;
+      border-bottom: 1px solid #ebeced;
+      .txt{
+        display: inline-block;
+        padding-left:26px ;
+        background: url(/static/img/icon-2.png) no-repeat 0 50%;
+        .part-num{
+          font-size: 24px;
+          color: #eb3e38;
+          vertical-align: top;
+          margin-left: 5px;
+        }
+      }
+    }
+    .overview-date{
+      line-height: 64px;
+      .txt{
+        display: inline-block;
+        padding-left:27px ;
+        background: url(/static/img/icon-3.png) no-repeat 0 50%;
+      }
+    }
+

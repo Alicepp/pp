@@ -1,0 +1,61 @@
+.page-pg{
+  overflow: hidden;
+  ul{
+    margin-top: -1px;
+  }
+}
+.page-pg li{
+  width: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.head-wrap2{
+  display: none;
+}
+.bg1{
+  background-image: url(img/img_02.png);
+  height: 473px;
+}
+.bg2{
+  background-image: url(img/img_04.png);
+  height: 639px;
+}
+.bg3{
+  background-image: url(img/img_06.png);
+  height: 567px;
+}
+.bg4{
+  background-image: url(img/img_07.png);
+  height: 540px;
+}
+.bg5{
+  background-image: url(img/img_077.png);
+  height: 524px;
+}
+.bg6{
+  background-image: url(img/img_08.png);
+  height: 371px;
+}
+.bg7{
+  background-image: url(img/img_09.png);
+  height: 630px;
+}
+.bg8{
+  background-image: url(img/img_10.png);
+  height: 579px;
+}
+.bg9{
+  background-image: url(img/img_14.png);
+  height: 405px;
+}
+
+// 通过递归实现循环
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  　　.imgbg-@{i} {
+      background-image: url("img/img2_0@{i}.png");
+      height: 675px;
+     }
+  .generate-columns(@n, (@i + 1));
+}
+.generate-columns(7);

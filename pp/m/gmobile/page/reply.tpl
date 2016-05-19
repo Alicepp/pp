@@ -1,0 +1,1 @@
+{%widget name="gmobile:widget/page/detail/tablist/reply.tpl" item=$tplData%}

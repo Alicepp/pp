@@ -1,0 +1,1 @@
+{%widget name="gmall:widget/page/detail/reply.tpl" item=$tplData%}

@@ -1,0 +1,24 @@
+<div class="box-item">
+    <ul class="cale-result">
+        <li>首付金额：<%this.firstpay%></li>
+        <li>贷款金额：<%this.loanpay%></li>
+        <%if(this.lastpercent){%>
+        <li>尾款金额：<%this.lastpay%></li>
+        <%}%>
+        <li>
+            月供：<%this.monthpay%>元
+        </li>
+        <li>
+            相当于日供：<%this.daypay%>元
+        </li>
+        <li>
+            年利率：<%this.ratepercent%>%
+            <%if(this.endtime){%>
+            <span>(<%this.endtime%>截止）</span>
+            <%}%>
+        </li>
+        <%if(this.procedureVal){%>
+        <li>手续费：<%this.procedureTxt%></li>
+        <%}%>
+    </ul>
+</div>

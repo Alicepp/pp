@@ -1,0 +1,137 @@
+html {
+	font-size: 62.5%;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+body,
+input,
+select,
+textarea {
+	font-family: "Microsoft Yahei", "Arial", verdana, helvetica, sans-serif;
+}
+body {
+	background-color: #fff;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	color: #4d4d4d;
+	font-size: 1.2rem;
+}
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu,
+label {
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th,
+td {
+	text-align: center;
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+a {
+	color: #4d4d4d;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+fieldset,
+img,
+input,
+button,
+textarea {
+	border: 0;
+}
+ol,
+ul,
+li {
+	list-style: none;
+}
+em {
+	font-style: normal;
+}
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="search"],
+input[type="number"] {
+	-webkit-appearance: none;
+	border-radius: 0
+}
+input[type="checkbox"] {
+	margin: 0 3px 3px 4px;
+}
+input {
+	outline: none;
+}
+video {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clear {
+	clear: both;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}

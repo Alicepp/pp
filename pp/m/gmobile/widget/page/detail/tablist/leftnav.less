@@ -1,0 +1,43 @@
+.leftnav{
+
+  height:40px;
+  color:#333;
+  font-size: 14px;
+  background:#fff;
+  position: relative;
+  .all-url{
+    position: absolute;
+    width: 50px;
+    height:40px;
+    text-align: right;
+    line-height: 40px;
+    right:3%;
+    z-index:11;
+
+  }
+  ul{
+    position: absolute;
+    z-index: 10;
+    left:0;
+    top:0;
+    height:40px;
+    width: 100%;
+    line-height:40px;
+    padding-left: 3%;
+    background:#fff;
+    border-bottom: #e6e6e6 solid 1px;
+    li{
+      padding: 0 15px;
+      height:100%;
+      cursor: pointer;
+    }
+    .hover,.selected{
+      color:#df4036;
+      background: url(red-nav.png) no-repeat left center;
+      background-size:10px auto;
+    }
+  }
+  .fixed{
+    position: fixed;
+  }
+}

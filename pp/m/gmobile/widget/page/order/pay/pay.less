@@ -1,0 +1,92 @@
+.pay-box{
+  overflow: hidden;
+  padding-top:30px;
+  position: relative;
+}
+.pack-up{
+  font-size: 1.1rem;
+  color: #666;
+  background-size: 10px auto;
+  line-height: 20px;
+  position: absolute;
+  right: 10px;
+  top:5px;
+  padding-left: 20px;
+  .p-open{
+  display: none;
+}
+}
+.pack-up:before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 20px;
+  background: url("../img/order-up.png") no-repeat center center;
+  background-size: 10px auto;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+  -ms-transition: all 600ms;
+  -o-transition: all 600ms;
+  transition: all 600ms;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.pay-info{
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-transition: all 900ms;
+  -moz-transition: all 900ms;
+  -ms-transition: all 900ms;
+  -o-transition: all 900ms;
+  transition: all 900ms;;
+  .pay-dl{
+    padding:0 10px;
+    color:#666;
+    height:40px;
+    line-height:40px;
+    border-bottom: 1px solid #dedede;
+    position: relative;
+    dt{
+      width:70px;
+      text-align: right;
+      position: absolute;
+    }
+    dd{
+      color: #333333;
+      margin-left: 70px;
+      em{
+        color:#ed3f36;
+      }
+    }
+  }
+  .pay-dl:last-child{
+    border-bottom:none
+  }
+}
+
+.box-close{
+  .pay-info{
+    height: 0;
+  }
+  .pack-up{
+    p{
+      display: none;
+    }
+    .p-open{
+      display: block;
+    }
+  }
+  .pack-up:before{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}

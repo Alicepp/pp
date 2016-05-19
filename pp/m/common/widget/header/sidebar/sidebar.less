@@ -1,0 +1,94 @@
+.sidebar{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  top:0;
+  overflow: hidden;
+  z-index: 100;
+  display: none;
+}
+.side-box{
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  right: -80%;
+  top:0;
+  background: url(./bg.png) repeat 0 0;
+  background-size: 6px auto;
+  a{
+    color: #9f978b;
+    font-size: 1.4rem;
+    display: block;
+  }
+
+
+
+}
+.side-nav{
+  padding: 33px 22px 0 12px;
+  border-bottom:1px solid #9d9d9d;
+  li{
+
+    height: 32px;
+    line-height: 32px;
+    margin-left: 10px;
+    background: #333333;
+    color: #999;
+    text-align: center;
+  }
+  .selected{
+    background: #9d9d9d;
+    color: #333;
+  }
+}
+.side-list{
+  overflow: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top:66px;
+  bottom: 0;
+  width: 100%;
+  li{
+    line-height: 24px;
+    padding: 18px 0 18px 24px;
+    position: relative;
+    border-bottom: 1px solid #353535;
+    position: relative;
+    a{
+
+    }
+
+    .brand-item{
+      display: inline-block;
+      width: 32%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .item-k{
+      position: absolute;
+      width: 12px;
+      word-break: normal;
+      word-wrap: break-word;
+      padding: 10px 3px;
+      line-height: 14px;
+      top:24px;
+      left: 0;
+      background: #333;
+      color: #999;
+      text-align: center;
+
+    }
+
+  }
+  .brand-li{
+    min-height: 65px;
+  }
+  ul{
+    display: none;
+  }
+  .selected{
+    display:block;
+  }
+}

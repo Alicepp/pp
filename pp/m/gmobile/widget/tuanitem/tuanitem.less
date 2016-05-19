@@ -1,0 +1,97 @@
+.tuanitem{
+  display: block;
+  margin: 0 3% 10px;
+  position: relative;
+  font-size: 11px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.24);
+
+  .item-top{
+    position: relative;
+    width: 100%;
+    min-height: 165px;
+    background: url(./img/carload.png) no-repeat center center #eee;
+    img{
+      position: relative;
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      -webkit-transition: opacity 500ms;
+      -moz-transition: opacity 500ms;
+      -ms-transition: opacity 500ms;
+      -o-transition: opacity 500ms;
+      transition: opacity 500ms;;
+    }
+  }
+  .item-center{
+    overflow: hidden;
+    padding: 5px 10px 10px;
+    line-height: 22px;
+    border-bottom: 1px solid #dddad5;
+    display: none;
+    h3{
+      font-size: 20px;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 28px;
+      padding: 11px 0 5px;
+      text-shadow: 0px 1px 2px rgba(51, 51, 51, 0.25);
+    }
+    .products-desc{
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+  }
+
+  .item-bottom{
+    padding: 5px 10px;
+    overflow: hidden;
+    background: #fff;
+    line-height: 30px;
+    position: relative;
+    .tuan-num{
+      background: url(./img/i2.png) no-repeat 0 50%;
+    }
+    .tuan-date{
+      background: url(./img/i1.png) no-repeat 0 50%;
+    }
+    .tuan-btn{
+      text-align: center;
+      color:#fff;
+      background: #eb3e38;
+      border-radius: 3px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      width: auto;
+      padding: 0 30px;
+      position: absolute;
+      right: 10px;
+      top:50%;
+      margin-top: -15px;
+      text-shadow: 2px 3px 4px rgba(4,0,0,0.25);
+    }
+    .tuan-date,.tuan-num{
+      margin-right: 30px;
+      padding-left: 24px;
+      background-size: auto 22px;
+    }
+  }
+
+
+
+}
+.tuanlistitem .item-center{
+  display: block;
+}
+
+
+

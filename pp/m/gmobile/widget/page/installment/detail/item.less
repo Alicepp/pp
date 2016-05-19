@@ -1,0 +1,147 @@
+.detail-item{
+  padding-bottom: 75px;
+  .box-item{
+    padding: 10px;
+    display: block;
+    color: #323232;
+    line-height: 22px;
+    overflow: hidden;
+  }
+  .box-loanFlow{
+    padding: 0;
+    .box-loanFlow-img{
+      position: relative;
+      width: 100%;
+      padding-bottom: 13.33%;
+    }
+    img{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .box-block{
+    padding: 10px 20px;
+  }
+  .block-line{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    line-height: 16px;
+    font-size: 10px;
+    ul{
+      width: 100%;
+      position: relative;
+      height: 50px;
+    }
+    .first-txt,.center-txt,.last-txt{
+      width: 50px;
+      text-align: center;
+      position: absolute;
+      top: 52px;
+      word-break: keep-all;
+      z-index: 1;
+    }
+    .first-txt{
+      left:0;
+    }
+    .center-txt{
+      left:50%;
+      margin-left: -25px;
+    }
+    .last-txt{
+      right: 0;
+
+    }
+    .line-item{
+      height: 3px;
+      z-index: 2;
+      position: absolute;
+      top:0;
+    }
+    .btn-item{
+      background: url(block.png) no-repeat center top;
+      padding-top: 35px;
+      background-size: 30px auto;
+      width: 50px;
+      text-align: center;
+      line-height: 16px;
+      font-size: 10px;
+      position: absolute;
+      top: -13px;
+      right: -25px;
+      span{
+        display: inline-block;
+        font-size: 10px;
+        width: 100px;
+        top:35px;
+        position: absolute;
+        left:50%;
+        margin-left: -50px;
+        text-align: center;
+        background-color: #fff;
+      }
+
+    }
+    .btn-touch{
+      background-image: url(block2.png);
+    }
+    .btn-longRatio{
+      right: auto;
+      left:-25px;
+    }
+
+    .line-bg{
+      background: #aedefd;
+      width: 100%;
+      z-index: 1;
+    }
+    .line-loan{
+      background: #3ac9a6;
+    }
+    .line-firstPay,.line-Nper{
+      background: #0e92e8;
+      left:0
+    }
+    .line-lastPay{
+      background: #e89f49;
+      right: 0;
+      z-index: 3;
+    }
+
+  }
+  .cale-result{
+    color: #f9894b;
+    line-height: 34px;
+    padding: 0 0 30px;
+    font-size: 13px;
+    li{
+      border-bottom: 1px solid #dedede;
+    }
+  }
+  .fixed-bottom{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right: 0;
+    padding: 20px 0;
+    border-top:1px solid #dedede;
+    background: #fff;
+    z-index: 99;
+
+
+
+  }
+  .btn-submit{
+    margin: 0 8px;
+    background: #df4036;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+
+  }
+}

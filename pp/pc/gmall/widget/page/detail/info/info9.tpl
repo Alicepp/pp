@@ -1,0 +1,1 @@
+{%extends file="gmall/widget/page/detail/info/info8.tpl"%}

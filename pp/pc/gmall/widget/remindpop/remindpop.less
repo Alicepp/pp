@@ -1,0 +1,83 @@
+.borderRadius(@radius){-moz-border-radius: @radius;-webkit-border-radius: @radius;border-radius: @radius;}
+.inlineBlock{display: inline-block;*display: inline;*zoom: 1;}
+.remind-hd{
+  height: 50px;
+  background: #e5e5e5;
+}
+.remind-bd{
+  padding: 30px 36px;
+  line-height: 40px;
+  font-size: 14px;
+  color:#444;
+  .tit{
+    color:#444;
+    font-size: 22px;
+  }
+  p{
+    color:#888888;
+  }
+  .line-item{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    .line-left{
+      display: inline-block;
+      width: 75px;
+      height: 100%;
+    }
+    .line-right{
+      display: inline-block;
+      height: 100%;
+      input{
+        width: 290px;
+        height: 100%;
+        padding-left: 10px;
+        border: 1px solid #D7D4CF;
+      }
+      .input-captcha{
+        width: 130px;
+      }
+      .send-captcha{
+        display: inline-block;
+        border: 1px solid #D7D4CF;
+        background: #F0EFED;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-left: 18px;
+        cursor: pointer;
+      }
+      .countdown{
+        cursor: auto;
+      }
+
+    }
+
+  }
+  .btn-confirm{
+    background: #F60023;
+    color:#fff;
+    text-align: center;
+    width: 123px;
+    border-radius: 5px;
+    line-height: 38px;
+    font-size: 16px;
+    margin-left:75px ;
+    display: inline-block;
+  }
+}
+
+.paying-wrap{padding: 36px 70px;
+    .paying{overflow: hidden;
+        dt{float: left;width: 61px;height: 61px;background: url(img/paying.png?__sprite) 0 0 no-repeat;}
+        dd{margin-left: 80px;overflow: hidden;}
+        .tt{margin: 15px 0 20px;font-size: 22px;color: #444;}
+        p{line-height: 22px;font-size: 14px;font-family: '宋体';}
+    }
+    .paying-btn{margin-top: 35px;overflow: hidden;
+        a{.inlineBlock;padding: 0 25px;height: 36px;text-align: center;line-height: 36px;font-size: 16px;color: #fff;.borderRadius(3px);}
+        .finish{background: #dd1136;}
+        .trouble{margin-left: 15px;background: #b6b6b6;}
+    }
+}

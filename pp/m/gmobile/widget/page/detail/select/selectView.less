@@ -1,0 +1,87 @@
+.map-box{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 45px;
+  bottom:0;
+}
+
+.select-tit{
+    height: 78px;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #DDDAD5;
+}
+.select-item{
+    height: 70px;
+    border-bottom: 1px solid #DDDAD5;
+    font-size: 16px;
+    padding-left: 20px;
+    img{
+      height: 21px;
+    }
+    .color-box{
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+    }
+    .color-amount{
+        font-size: 1.2rem;
+        margin-left: 6px;
+    }
+    .pay-box,.gift{
+      display: inline-block;
+    }
+    em{
+      color: #de1010;
+    }
+    .gift{
+      font-size: 0.9rem;
+    }
+    .gift-desc{
+      display: inline-block;
+      height: 18px;
+      line-height: 18px;
+      padding-left: 20px;
+      background: url(/static/lib/img/public/gift.png) no-repeat 0 0;
+      background-size: auto 17px;
+    }
+
+}
+.select-list .selected,.select-item:active{
+    background: #fff;
+    .color-name,.color-amount{
+      color: #de1010;
+    }
+}
+.select-autoHight{
+  .select-item{
+    height: auto;
+    padding: 15px 10px 15px 20px;
+  }
+}
+.pay-item-info{
+  font-size: 12px;
+  line-height: 18px;
+}
+.auto-list .selected{
+
+}
+.dealer-bd{
+  text-align: center;
+  .select-tit{
+    border-bottom: none;
+  }
+  select{
+    height: 45px;
+    width: 90%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid #a8a8a8;
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+  }
+}
+
